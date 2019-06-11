@@ -125,7 +125,7 @@ bot.on('guildMemberAdd', member => {
 	user = member.user.username;
 	
 	console.log(`user: ${user} member: ${member}`);
-	var regex = /([0-9]{2-4})$/;
+	var regex = /([10-99])$/;
 	console.log(`regex:${regex}`);
 	if (user.match(regex) == true){
 	console.log(`found a bot`);
