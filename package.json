@@ -1,5 +1,5 @@
 {
-  "name": "bean bot",
+  "name": "bean-bot",
   "version": "1.0.0",
   "description": "A simple Discord.js bot base.",
   "main": "bot.js",
