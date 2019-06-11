@@ -128,10 +128,7 @@ bot.on('guildMemberAdd', member => {
 	var regex = /([10-99])$/;
 	console.log(`regex:${regex}`);
 	function confirmEnding(string, target) {
-  	// We return the method with the target as a parameter
-  	// The result will be a boolean (true/false)
-	const str1 = string
-  	return str1.endsWith(target); // 'Bastian'.endsWith('n')
+ 	 return string.substr(-target.length) === target;
 	}
 	if (confirmEnding(user, regex)){
 	 console.log(`found a bot`);
