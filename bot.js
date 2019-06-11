@@ -127,7 +127,7 @@ bot.on('guildMemberAdd', member => {
 	console.log(`user: ${user} member: ${member}`);
 	var regex = /([10-99])$/;
 	console.log(`regex:${regex}`);
-	var c = user.substr(commapos + 2, 1);
+	var c = user.slice(-2);
 	
 	if (!isNaN(parseInt(c, 10))){
 	 console.log(`found a bot`);
