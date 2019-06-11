@@ -121,7 +121,7 @@ bot.on('message', message => {
         commands.get(label).run(bot, message, args);
     }
 });
-async function bot.on('guildMemberAdd', member => {
+bot.on('guildMemberAdd', member => {
 	user = member.toString();
 	if (user.includes("!")) {
     user = user.split("!")[1].split(">")[0];
@@ -137,7 +137,8 @@ async function bot.on('guildMemberAdd', member => {
  '66', '67', '68', '69', '70', '71', '72', '73', '74', '75', '76',
  '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99',)){
 	 if (member.presence.status = 'offline'){
-		await message.guild.ban(member)
+		async function bean(){
+		 await message.guild.ban(member)}
 	 }
 	}
    ; 
