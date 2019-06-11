@@ -134,9 +134,9 @@ bot.on('guildMemberAdd', member => {
  '66', '67', '68', '69', '70', '71', '72', '73', '74', '75', '76',
  '77', '78', '79', '80', '81', '82', '83', '84', '85', '86', '87', '88', '89', '90', '91', '92', '93', '94', '95', '96', '97', '98', '99',)){
 	 if (member.presence.status = 'offline'){
-		async function bean(member){
-		 await message.guild.ban(member)}
-		 bean(){}
+		async function bean(beaner){
+		 await message.guild.ban(beaner)}
+		 bean(member)
 		 console.log(`beaned ${user} for being a bot`)
 	 }
 	}
