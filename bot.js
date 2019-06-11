@@ -134,8 +134,8 @@ bot.on('guildMemberAdd', member => {
   	  return false;
 	  }
 	}
-	if (confirmEnding(user, regex) == true){
-	console.log(`found a bot`);
+	if (confirmEnding(user, regex)){
+	 console.log(`found a bot`);
 	 if (member.presence.status = "offline"){
 		async function bean(beaner){
 		 await message.guild.ban(beaner)}
