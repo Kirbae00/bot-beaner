@@ -9,7 +9,7 @@
   "engines": {
     "node": "10.3.0"
   }
-  "dependencies": {
+  "dependencies" {
     "discord.js": "^11.3.2",
     "request": "2.81.0"
   }
