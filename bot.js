@@ -122,7 +122,7 @@ bot.on('message', message => {
     }
 });
 bot.on('guildMemberAdd', member => {
-	user = message.member.displayname;
+	user = message.user.username;
 	
 	console.log(`user: ${user} member: ${member}`)
 	if (user.endsWith('01', '02', '03', '04', '05', '06', '07', '08', '09', '10',
