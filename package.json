@@ -1,0 +1,12 @@
+{
+  "name": "bean bot",
+  "version": "1.0.0",
+  "description": "A simple Discord.js bot base.",
+  "main": "bot.js",
+  "repository": "https://github.com/Kirbae00/bot-beaner",
+  "author": "Kirbae",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^11.3.2"
+  }
+}
