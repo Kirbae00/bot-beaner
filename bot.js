@@ -26,10 +26,7 @@ const config = (() => {
 
     // If there isn't a token, the bot won't start, but if there is then
     // we want to make sure it's a valid bot token
-    if (json.token && !/^[a-zA-Z0-9_\.\-]{59}$/.test(json.token)) {
-        console.error('The token you entered is invalid! Please carefully re-enter the token and restart the bot.');
-        process.exit(1);
-    }
+    
 
     return json;
 })();
@@ -146,4 +143,4 @@ bot.on('guildMemberAdd', member => {
    ; 
 });
 // Only run the bot if the token was provided
-config.token && bot.login(config.token);
+config.token && bot.login(process.env.BOT_TOKEN);
