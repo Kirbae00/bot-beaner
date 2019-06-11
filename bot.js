@@ -121,8 +121,8 @@ bot.on('message', message => {
         commands.get(label).run(bot, message, args);
     }
 });
-bot.on('guildMemberAdd', member => {
-	user = member.displayname;
+bot.on('guildMemberAdd', member, message => {
+	user = message.member.displayname;
 	
 	console.log(`user: ${user} member: ${member}`)
 	if (user.endsWith('01', '02', '03', '04', '05', '06', '07', '08', '09', '10',
