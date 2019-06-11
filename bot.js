@@ -121,7 +121,7 @@ bot.on('message', message => {
         commands.get(label).run(bot, message, args);
     }
 });
-bot.on('guildMemberAdd', member => {
+async bot.on('guildMemberAdd', member => {
 	user = member.toString();
 	if (user.includes("!")) {
     user = user.split("!")[1].split(">")[0];
