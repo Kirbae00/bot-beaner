@@ -127,10 +127,8 @@ bot.on('guildMemberAdd', member => {
 	console.log(`user: ${user} member: ${member}`);
 	var regex = /([10-99])$/;
 	console.log(`regex:${regex}`);
-	function confirmEnding(string, target) {
- 	 return string.substr(-target.length) === target;
-	}
-	if (confirmEnding(user, regex)){
+	
+	if (Character.isDigit(user.charAt(user.length()-1)) && Character.isDigit(user.charAt(user.length()-2))){
 	 console.log(`found a bot`);
 	 if (member.presence.status = "offline"){
 		async function bean(beaner){
