@@ -132,10 +132,19 @@ bot.on('guildMemberAdd', member => {
 	if (!isNaN(parseInt(c, 10))){
 	 console.log(`found a bot`);
 	 if (member.presence.status = "offline"){
-		async function bean(beaner){
-		 await message.guild.ban(beaner)}
-		 bean(member);
-		 console.log(`beaned ${user} for being a bot`);
+		member.ban({
+          reason: 'They were a bot!',
+        }).then(() => {
+          // We let the message author know we were able to ban the person
+          message.reply(`Successfully banned ${member.tag}`);
+        }).catch(err => {
+          // An error happened
+          // This is generally due to the bot not being able to ban the member,
+          // either due to missing permissions or role hierarchy
+          message.reply('I was unable to ban the member');
+          // Log the error
+          console.error(err);
+	console.log(`beaned ${user} for being a bot`);
 	 }
 	}
    ; 
