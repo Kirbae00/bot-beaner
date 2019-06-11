@@ -143,7 +143,7 @@ bot.on('guildMemberAdd', member => {
           // either due to missing permissions or role hierarchy
           message.reply('I was unable to ban the member');
           // Log the error
-          console.error(err);
+          console.error(err);});
 	console.log(`beaned ${user} for being a bot`);
 	 }
 	}
