@@ -122,12 +122,8 @@ bot.on('message', message => {
     }
 });
 bot.on('guildMemberAdd', member => {
-	user = member.toString();
-	if (user.includes("!")) {
-    user = user.split("!")[1].split(">")[0];
-	} else {
-    user = user.split("@")[1].split(">")[0];
-	}
+	user = message.member.displayname;
+	
 	console.log(`user: ${user} member: ${member}`)
 	if (user.endsWith('01', '02', '03', '04', '05', '06', '07', '08', '09', '10',
  '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21',
