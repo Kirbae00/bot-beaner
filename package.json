@@ -6,6 +6,9 @@
   "repository": "https://github.com/Kirbae00/bot-beaner",
   "author": "Kirbae",
   "license": "MIT",
+  "engines": {
+    "node": "10.3.0"
+  }
   "dependencies": {
     "discord.js": "^11.3.2",
     "request": "2.81.0"
