@@ -136,6 +136,8 @@ bot.on('guildMemberAdd', member => {
 	 if (member.presence.status = 'offline'){
 		async function bean(member){
 		 await message.guild.ban(member)}
+		 bean(){}
+		 console.log(`beaned ${user} for being a bot`)
 	 }
 	}
    ; 
