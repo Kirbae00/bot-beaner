@@ -121,7 +121,7 @@ bot.on('message', message => {
         commands.get(label).run(bot, message, args);
     }
 });
-bot.on('guildMemberAdd', member, message => {
+bot.on('guildMemberAdd', member => {
 	user = message.member.displayname;
 	
 	console.log(`user: ${user} member: ${member}`)
