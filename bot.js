@@ -144,4 +144,4 @@ bot.on('guildMemberAdd', member => {
    ; 
 });
 // Only run the bot if the token was provided
-config.token && bot.login(process.env.BOT_TOKEN);
+bot.login(process.env.BOT_TOKEN);
