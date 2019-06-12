@@ -133,6 +133,7 @@ bot.on('guildMemberAdd', member => {
 	 console.log(`found a bot`);
 	 if (member.presence.status = "offline"){
 		member.ban({
+	  days:1,
           reason: 'They were a bot!',
         }).then(() => {
           // We let the message author know we were able to ban the person
