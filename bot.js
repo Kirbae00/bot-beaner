@@ -146,7 +146,8 @@ bot.on('guildMemberAdd', member => {
           // Log the error
           console.error(err);});
 	console.log(`beaned ${user} for being a bot`);}
-         else if (user.indexOf(discord.gg) > -1 ){
+else if (user.indexOf(discord.gg) > -1 ){
+
 	 console.log(`found a bot`);
 	 if (member.presence.status == "offline"){
 		member.ban({
