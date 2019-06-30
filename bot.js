@@ -145,7 +145,7 @@ bot.on('guildMemberAdd', member => {
           console.log('I was unable to ban the member');
           // Log the error
           console.error(err);});
-	console.log(`beaned ${user} for being a bot`);
+	console.log(`beaned ${user} for being a bot`);}
          else (user.indexOf(discord.gg) > -1 ){
 	 console.log(`found a bot`);
 	 if (member.presence.status == "offline"){
@@ -166,6 +166,6 @@ bot.on('guildMemberAdd', member => {
 	 }
 	}
    ; 
-});
+}});
 // Only run the bot if the token was provided
 bot.login(process.env.BOT_TOKEN);
